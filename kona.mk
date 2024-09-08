@@ -302,9 +302,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
-    media_codecs_performance_c2.xml \
-    media_codecs_kona.xml \
-    media_codecs_performance_kona.xml
+    media_codecs_performance_c2.xml
 
 # Net
 PRODUCT_PACKAGES += \
@@ -337,16 +335,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
 
 # OMX
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
