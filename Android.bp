@@ -13,3 +13,17 @@ soong_namespace {
         "vendor/qcom/opensource/usb/etc",
     ],
 }
+
+vintf_compatibility_matrix {
+    name: "framework_compatibility_matrix.xml",
+    stem: "framework_compatibility_matrix.xml",
+    srcs: ["framework_compatibility_matrix.xml"],
+    vendor: true,
+}
+
+vintf_compatibility_matrix {
+    name: "framework_compatibility_dolby.xml",
+    stem: "framework_compatibility_dolby.xml",
+    srcs: ["framework_compatibility_dolby.xml"],
+    vendor: true,
+}

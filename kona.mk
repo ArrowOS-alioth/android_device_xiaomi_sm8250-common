@@ -8,7 +8,7 @@
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
+#$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -488,3 +488,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm8250-common/sm8250-common-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    framework_compatibility_matrix.xml \
+    framework_compatibility_dolby.xml
