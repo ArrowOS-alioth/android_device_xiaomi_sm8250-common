@@ -185,12 +185,12 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+# PRODUCT_PACKAGES += \
+#     XiaomiParts
 
-# Device Settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+# # Device Settings
+# PRODUCT_PACKAGES += \
+#     XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
